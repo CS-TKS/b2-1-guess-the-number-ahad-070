@@ -22,6 +22,7 @@ public class NumberGuesser {
         boolean hasGuessedCorrectly = false;
 
         // 3. Game Introduction: Print a welcome message to the player.
+        System.out.println("Welcome to the Number Guesser Game!");
         System.out.println("I'm thinking of a number between 1 and 100. Can you guess it?");
 
         // 4. Game Loop: This is where the core logic will go.
@@ -29,14 +30,14 @@ public class NumberGuesser {
         while (!hasGuessedCorrectly) {
             // TODO: Prompt the user to enter their guess.
             // Example: System.out.print("Enter your guess: ");
-
+          System.out.print("Enter your guess: ");
 
             // TODO: Read the integer guess from the user using the scanner.
             // Hint: userGuess = inputScanner.nextInt();
-
+            userGuess++;
 
             // TODO: Increment the guess counter.
-
+            guessCount++;
 
             // TODO: Use an if/else-if/else block to check the guess.
             // - If userGuess is greater than numberToGuess, print "Too high, try again."
@@ -46,6 +47,7 @@ public class NumberGuesser {
             //   (Replace [X] with the value of guessCount).
 
         }
+
 
         // 5. Cleanup: It's good practice to close the scanner when you're done.
         inputScanner.close();
